@@ -48,7 +48,7 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 
 ## Estructura del Repositorio
 ├── ejecutable_proyecto.py            # Script principal que automatiza todo el pipeline
-├── cuaderno_explicativo.ipynb        # Notebook explicativo con análisis y resultados paso a paso
+├── cuaderno_interactivo.ipynb        # Notebook explicativo con análisis y resultados paso a paso
 ├── resultados_proyecto/              # Carpeta con los resultados organizados por etapa y experimento
 │   ├── experimento_1/                # Resultados del experimento 1 (Numero de epocas y pasos necesarios para encontrar el mejor filtro.)
 │   ├── etapa_2_resultados/           # Resultados de la etapa 2 del pipeline
@@ -58,3 +58,38 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 └── README.md                         # Documentación principal del proyecto
 
 ## Instalacion y requisitos
+
+### Clonar el repositorio
+git clone https://github.com/tavo3110/PROYECTO-IA.git
+cd PROYECTO-IA
+
+### Crear un entorno virtual (opcional pero recomendado)
+python -m venv env
+source env/bin/activate      # En Windows: env\Scripts\activate
+
+### Instalar dependencias
+pip install -r requirements.txt
+
+## Descarga e instalacion Birdnet
+## Descargar el dataset de BirdCLEF 2025
+
+Para validar y probar el proyecto con datos reales, sigue estos pasos para obtener el dataset de la competencia BirdCLEF 2025:
+
+### Pasos para descargar:
+1. **Accede a la página oficial** del desafío en Kaggle:  
+   🔗 [BirdCLEF 2025 Competition](https://www.kaggle.com/c/birdclef-2025)
+
+2. **Ve a la sección de datos** mediante:  
+   🔗 [Datos de BirdCLEF 2025](https://www.kaggle.com/c/birdclef-2025/data)  
+   (O haz clic en la pestaña "Data" en la página de la competencia)
+
+3. **Únete a la competencia** haciendo clic en el botón _"Join Competition"_  
+   (Requisito para habilitar la descarga)
+
+4. **Descarga el dataset completo**:
+   - Desplázate al final de la página de datos
+   - Haz clic en el botón de descarga todo el cual descargara un archivo(.zip)
+
+
+Al descomprimir el archivo descargado encontrarás una carpeta llamada birdcleff-2025+ el cual tendra diferentes archivos pero para el proyecto los archivos importantes a tener en cuenta fueron la carpeta de train audio en donde se encontraban aquellas carpetas codificadas en las cuales se encontraban los audios etiquetados y el archivo csv llamado taxonomy en el cual se decia como estaba codificada cada carpeta y a que especie pertenecia
+
