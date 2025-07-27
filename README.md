@@ -57,7 +57,7 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 ├── requirements.txt                  # Requisitos y dependencias del entorno
 └── README.md                         # Documentación principal del proyecto
 
-## Instalacion y requisitos
+# Instalacion y requisitos
 
 ### Clonar el repositorio
 git clone https://github.com/tavo3110/PROYECTO-IA.git
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 ### Pasos para descargar:
 DESCARGA E INSTALACIÓN DE BIRDNET ANALYZER
 1. **Descargar BirdNET Analyzer:**
-:: Ir a: https://github.com/birdnet-team/BirdNET-Analyzer
+🔗 [BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer)
 :: Hacer clic en "Code" > "Download ZIP"
 :: Extraer el contenido en una carpeta conocida, por ejemplo: D:\BirdNET-Analyzer-main
 
@@ -83,13 +83,13 @@ DESCARGA E INSTALACIÓN DE BIRDNET ANALYZER
 conda create -n birdnet python=3.11.13 -y
 conda activate birdnet
 
-**3. Ir a la carpeta donde se extrajo BirdNET Analyzer**
+3. **Ir a la carpeta donde se extrajo BirdNET Analyzer**
 cd /d "D:\BirdNET-Analyzer-main"
 
-**4. Instalar las dependencias necesarias**
+4. **Instalar las dependencias necesarias**
 pip install -e .
 
-**5. Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
+5. **Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
 :: Asegúrate de modificar las rutas según tu estructura
 python -m birdnet_analyzer.analyze "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA" ^
     --output "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA\resultados" ^
@@ -124,3 +124,71 @@ Para validar y probar el proyecto con datos reales, sigue estos pasos para obten
 
 Al descomprimir el archivo descargado encontrarás una carpeta llamada birdcleff-2025+ el cual tendra diferentes archivos pero para el proyecto los archivos importantes a tener en cuenta fueron la carpeta de train audio en donde se encontraban aquellas carpetas codificadas en las cuales se encontraban los audios etiquetados y el archivo csv llamado taxonomy en el cual se decia como estaba codificada cada carpeta y a que especie pertenecia
 
+# Uso del Proyecto
+
+Este proyecto se ejecuta de forma automática mediante el archivo `ejecutabl proyecto.py`, el cual recorre todas las etapas del pipeline:
+
+1. Segmentación del audio
+2. Filtrado de los fragmentos (pasabanda + Kalman)
+3. Análisis con BirdNET-R a audios sin filtro y con filtros
+4. Entrenamiento y evaluación del agente de Aprendizaje por Refuerzo (RL)
+5. Comparacion entre confianza sin filtros y con filtros
+
+## 📂 Requisitos previos
+
+Antes de ejecutar el script, asegúrate de:
+
+- Tener una carpeta de entrada que contenga:
+  - El archivo de audio (.wav o .ogg) que deseas analizar
+  - Una subcarpeta llamada `salida birdnet/` dentro de esa misma carpeta, donde se almacenarán los resultados del análisis original con BirdNET (sin filtros)
+
+### Ejemplo de estructura esperada:
+
+/mi_carpeta_audio/
+├── fragmento_001.wav
+└── salida_birdnet/
+
+- Tener BirdNET correctamente instalado y funcional desde la terminal (debe poder ejecutarse sin errores)
+
+## Ejecutar el pipeline completo
+
+Desde la terminal, ejecuta:
+
+python ejecutable_proyecto.py
+
+## Interacción con el Sistema
+
+El sistema solicitará los siguientes datos durante la ejecución:
+
+1. **Ruta del archivo de audio**  
+   `Ingrese la ruta completa del archivo de audio (sin comillas):`
+
+2. **Parámetros de configuración**  
+   Se deberán establecer:
+   - Duración de los fragmentos (en segundos)
+   - Energía mínima para segmentar
+   - Duración mínima de baja energía para realizar el corte
+
+    *Nota:* Si no se introducen valores, se usarán los valores por defecto recomendados solo presionando enter.
+
+## Parámetros Avanzados
+
+Los siguientes parámetros pueden modificarse directamente editando el archivo `ejecutable proyecto.py`:
+
+| Parámetro | Descripción |
+|-----------|-------------|
+| Número de épocas | Cantidad de iteraciones completas sobre el dataset |
+| Definir las acciones | Posibles decisiones que puede tomar el agente RL es decir Q, R y fc|
+| Máximos pasos por episodio | Límite de pasos por ciclo de entrenamiento |
+| Rangos de búsqueda | Intervalos para exploración de hiperparámetros |
+
+## Resultados Generados
+
+Al finalizar la ejecución, el sistema creará los siguientes archivos y directorios:
+
+ fragmentos_audio/                # Fragmentos generados del audio original
+ temp_eval/                       # Carpeta temporal para procesamiento (se vacía automáticamente)
+ temp_eval_result/                # Carpeta temporal para procesamiento (se vacía automáticamente)
+ salida_birdnet/*.txt             # Resultados de BirdNET sin filtros (referencia)
+ resultados_csv_birdnet/          # CSV con los resultados de BirdNET sobre audios filtrados
+ comparacion_resultados.csv       # Comparación de puntuaciones de confianza entre fragmentos sin filtro y mejores filtrados por RL
