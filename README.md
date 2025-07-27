@@ -19,7 +19,7 @@ Este proyecto se centra en mejorar la calidad de grabaciones ambientales (al air
 - **Filtro de Kalman** para suavizar la señal y reducir el ruido residual de forma adaptativa.
 
 ## Configuración de Filtros
-Las configuraciones de estos filtros (parámetros `Q`, `R` y frecuencia de corte `fc`) fueron seleccionadas utilizando un enfoque de **aprendizaje por refuerzo (Reinforcement Learning)**. En este contexto:
+Las configuraciones de estos filtros (parámetros `Q`, `R` y frecuencia de corte `fc`) fueron seleccionadas bajo investigacion y utilizando un enfoque de **aprendizaje por refuerzo (Reinforcement Learning)**. En este contexto:
 
 - El agente explora diferentes combinaciones de filtros.
 - La recompensa está basada en el nivel de confianza proporcionado por **BirdNET-R**, una herramienta de inferencia acústica para detección de especies.
@@ -154,7 +154,7 @@ Al descomprimir el archivo descargado encontrarás una carpeta llamada birdcleff
 
 # Uso del Proyecto
 
-Este proyecto se ejecuta de forma automática mediante el archivo `ejecutabl proyecto.py`, el cual recorre todas las etapas del pipeline:
+Ademas del analisis de datos, resultados y explicacion detallada del proceso logrado en el proyecto por parte del cuaderno interactivo tambien tiene una seccion de prueba para aquellos interesados en aplicar el pipeline a audios personales para lograr esto se ejecuta el archivo `ejecutable proyecto.py`, el cual recorre todas las etapas del pipeline:
 
 1. Segmentación del audio
 2. Filtrado de los fragmentos (pasabanda + Kalman)
@@ -169,14 +169,7 @@ Antes de ejecutar el script, asegúrate de:
 - Tener una carpeta de entrada que contenga:
   - El archivo de audio (.wav o .ogg) que deseas analizar
   - Una subcarpeta llamada `salida birdnet/` dentro de esa misma carpeta, donde se almacenarán los resultados del análisis original con BirdNET (sin filtros)
-
-### Ejemplo de estructura esperada:
-
-/mi_carpeta_audio/
-├── fragmento_001.wav
-└── salida_birdnet/
-
-- Tener BirdNET correctamente instalado y funcional desde la terminal (debe poder ejecutarse sin errores)
+  - Tener BirdNET correctamente instalado y funcional desde la terminal (debe poder ejecutarse sin errores)
 
 ## Ejecutar el pipeline completo
 
@@ -231,7 +224,7 @@ Los resultados del proyecto se obtuvieron principalmente a partir del cuaderno i
 Contiene los resultados principales del proyecto:
 
 - `comparacion_resultados.csv`: Comparación de mejora de los 50 audios procesados por el pipeline. Muestra las diferencias de confianza de BirdNET antes y después del filtrado, junto con los filtros óptimos seleccionados.
-- `comparacion_resultados.png`: Representación gráfica del archivo CSV anterior. Muestra, para cada audio, la mejora o desmejora en la confianza de detección tras el filtrado.
+- `mejora_confianza.png`: Representación gráfica del archivo CSV anterior. Muestra, para cada audio, la mejora o disminucion en la confianza de detección de birdnet tras el filtrado.
 
 ### `experimento_1/`
 Permite analizar cómo afecta el número de épocas y pasos del algoritmo de aprendizaje por refuerzo (RL) en la confianza de detección de BirdNET:
