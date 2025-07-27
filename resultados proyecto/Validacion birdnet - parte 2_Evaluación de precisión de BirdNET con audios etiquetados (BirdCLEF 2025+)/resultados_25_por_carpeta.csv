@@ -1,0 +1,312 @@
+especie_esperada,carpeta,archivo,n_audio,ave_predicha,confianza
+Nyctidromus albicollis,compau,XC857625.ogg,1,Nyctidromus albicollis,0.9996
+Nyctidromus albicollis,compau,XC128797.ogg,2,Nyctidromus albicollis,0.9472
+Nyctidromus albicollis,compau,iNat408157.ogg,3,Nyctidromus albicollis,0.987
+Nyctidromus albicollis,compau,XC688820.ogg,4,Nyctidromus albicollis,0.9958
+Nyctidromus albicollis,compau,iNat1217423.ogg,5,Nyctidromus albicollis,0.8637
+Nyctidromus albicollis,compau,iNat45888.ogg,6,Nyctidromus albicollis,0.9981
+Nyctidromus albicollis,compau,iNat27443.ogg,7,Nyctidromus albicollis,0.9885
+Nyctidromus albicollis,compau,iNat714050.ogg,8,Nyctidromus albicollis,0.8396
+Nyctidromus albicollis,compau,iNat628080.ogg,9,Nyctidromus albicollis,0.9935
+Nyctidromus albicollis,compau,XC525623.ogg,10,Nyctidromus albicollis,0.7453
+Nyctidromus albicollis,compau,iNat935127.ogg,11,Nyctidromus albicollis,0.7825
+Nyctidromus albicollis,compau,XC192097.ogg,12,Nyctidromus albicollis,0.9912
+Nyctidromus albicollis,compau,iNat791004.ogg,13,Nyctidromus albicollis,0.9732
+Nyctidromus albicollis,compau,XC922085.ogg,14,Nyctidromus albicollis,0.9901
+Nyctidromus albicollis,compau,XC145933.ogg,15,Nyctidromus albicollis,0.9943
+Nyctidromus albicollis,compau,iNat902169.ogg,16,Nyctidromus albicollis,0.7195
+Nyctidromus albicollis,compau,XC403926.ogg,17,N/A,0.0
+Nyctidromus albicollis,compau,XC671534.ogg,18,Nyctidromus albicollis,0.9857
+Nyctidromus albicollis,compau,iNat419336.ogg,19,Ciccaba nigrolineata,0.3221
+Nyctidromus albicollis,compau,XC388085.ogg,20,Nyctidromus albicollis,0.9937
+Nyctidromus albicollis,compau,XC957234.ogg,21,Nyctidromus albicollis,0.999
+Nyctidromus albicollis,compau,XC878746.ogg,22,Nyctidromus albicollis,0.9953
+Nyctidromus albicollis,compau,iNat194597.ogg,23,Nyctidromus albicollis,0.9987
+Nyctidromus albicollis,compau,iNat266545.ogg,24,Nyctidromus albicollis,0.9977
+Nyctidromus albicollis,compau,XC146394.ogg,25,Nyctidromus albicollis,0.9121
+Coragyps atratus,blkvul,XC428767.ogg,1,N/A,0.0
+Coragyps atratus,blkvul,XC422352.ogg,2,Ciccaba albitarsis,0.2272
+Coragyps atratus,blkvul,XC743758.ogg,3,Coragyps atratus,0.8325
+Coragyps atratus,blkvul,XC419215.ogg,4,Crotophaga ani,0.8597
+Coragyps atratus,blkvul,XC405834.ogg,5,Coragyps atratus,0.9932
+Coragyps atratus,blkvul,XC419189.ogg,6,N/A,0.0
+Coragyps atratus,blkvul,XC390401.ogg,7,Coragyps atratus,0.7345
+Coragyps atratus,blkvul,XC941029.ogg,8,Coragyps atratus,0.2752
+Coragyps atratus,blkvul,XC143654.ogg,9,Coragyps atratus,0.3483
+Coragyps atratus,blkvul,XC798239.ogg,10,Coragyps atratus,0.2279
+Coragyps atratus,blkvul,XC665087.ogg,11,N/A,0.0
+Coragyps atratus,blkvul,XC408078.ogg,12,N/A,0.0
+Coragyps atratus,blkvul,XC115722.ogg,13,N/A,0.0
+Coragyps atratus,blkvul,XC311975.ogg,14,N/A,0.0
+Coragyps atratus,blkvul,XC567305.ogg,15,Coragyps atratus,0.9652
+Coragyps atratus,blkvul,XC611379.ogg,16,N/A,0.0
+Coragyps atratus,blkvul,XC456651.ogg,17,Saltator striatipectus,0.6634
+Coragyps atratus,blkvul,iNat878650.ogg,18,N/A,0.0
+Coragyps atratus,blkvul,XC150219.ogg,19,Coragyps atratus,0.3383
+Coragyps atratus,blkvul,XC143652.ogg,20,Eudocimus albus,0.2322
+Coragyps atratus,blkvul,XC324803.ogg,21,N/A,0.0
+Coragyps atratus,blkvul,XC150218.ogg,22,Coragyps atratus,0.7983
+Coragyps atratus,blkvul,XC315319.ogg,23,Coragyps atratus,0.9039
+Coragyps atratus,blkvul,XC421475.ogg,24,Ciccaba virgata,0.5643
+Coragyps atratus,blkvul,XC917557.ogg,25,Coragyps atratus,0.4211
+Tyrannus melancholicus,trokin,iNat973562.ogg,1,Tyrannus melancholicus,0.9467
+Tyrannus melancholicus,trokin,iNat1274107.ogg,2,Tyrannus melancholicus,0.9972
+Tyrannus melancholicus,trokin,iNat1163434.ogg,3,Tyrannus melancholicus,0.3984
+Tyrannus melancholicus,trokin,XC772124.ogg,4,Tyrannus melancholicus,0.9927
+Tyrannus melancholicus,trokin,iNat794814.ogg,5,Empidonax traillii,0.5971
+Tyrannus melancholicus,trokin,XC385283.ogg,6,Himantopus mexicanus,0.5256
+Tyrannus melancholicus,trokin,XC446375.ogg,7,Tyrannus melancholicus,0.9996
+Tyrannus melancholicus,trokin,XC35156.ogg,8,Tyrannus melancholicus,0.8555
+Tyrannus melancholicus,trokin,iNat1185647.ogg,9,N/A,0.0
+Tyrannus melancholicus,trokin,XC944467.ogg,10,Tyrannus melancholicus,0.9812
+Tyrannus melancholicus,trokin,XC137690.ogg,11,Tyrannus melancholicus,0.621
+Tyrannus melancholicus,trokin,XC756056.ogg,12,Tyrannus melancholicus,0.9525
+Tyrannus melancholicus,trokin,iNat675903.ogg,13,Tyrannus melancholicus,0.6163
+Tyrannus melancholicus,trokin,XC828076.ogg,14,Tyrannus melancholicus,0.8166
+Tyrannus melancholicus,trokin,XC617976.ogg,15,Tyrannus melancholicus,0.9338
+Tyrannus melancholicus,trokin,XC328012.ogg,16,Tyrannus melancholicus,0.9324
+Tyrannus melancholicus,trokin,XC446383.ogg,17,Tyrannus melancholicus,0.9525
+Tyrannus melancholicus,trokin,XC285271.ogg,18,Tyrannus melancholicus,0.8768
+Tyrannus melancholicus,trokin,XC525024.ogg,19,Tyrannus melancholicus,0.4362
+Tyrannus melancholicus,trokin,iNat158989.ogg,20,Tyrannus melancholicus,0.9757
+Tyrannus melancholicus,trokin,XC604129.ogg,21,Tyrannus melancholicus,0.9044
+Tyrannus melancholicus,trokin,iNat348358.ogg,22,Tyrannus melancholicus,0.9705
+Tyrannus melancholicus,trokin,XC250399.ogg,23,Tyrannus melancholicus,0.9576
+Tyrannus melancholicus,trokin,XC342277.ogg,24,Tyrannus melancholicus,0.9499
+Tyrannus melancholicus,trokin,XC574036.ogg,25,Tyrannus melancholicus,0.9963
+Caracara plancus,y00678,XC166401.ogg,1,N/A,0.0
+Caracara plancus,y00678,XC187587.ogg,2,Caracara plancus,0.2601
+Caracara plancus,y00678,XC186430.ogg,3,N/A,0.0
+Caracara plancus,y00678,XC113948.ogg,4,Andigena nigrirostris,0.5934
+Caracara plancus,y00678,XC127389.ogg,5,N/A,0.0
+Caracara plancus,y00678,iNat847822.ogg,6,N/A,0.0
+Caracara plancus,y00678,XC836158.ogg,7,Butorides virescens,0.3441
+Caracara plancus,y00678,iNat743593.ogg,8,Ara ararauna,0.2425
+Caracara plancus,y00678,iNat380304.ogg,9,N/A,0.0
+Caracara plancus,y00678,iNat283591.ogg,10,Ardea herodias,0.7327
+Caracara plancus,y00678,iNat1106656.ogg,11,Egretta caerulea,0.411
+Caracara plancus,y00678,XC165330.ogg,12,N/A,0.0
+Caracara plancus,y00678,XC147708.ogg,13,N/A,0.0
+Caracara plancus,y00678,XC554907.ogg,14,Caracara plancus,0.8083
+Caracara plancus,y00678,XC590285.ogg,15,N/A,0.0
+Caracara plancus,y00678,XC508614.ogg,16,Caracara plancus,0.9817
+Caracara plancus,y00678,XC569823.ogg,17,Caracara plancus,0.536
+Caracara plancus,y00678,XC357720.ogg,18,Caracara plancus,0.3337
+Caracara plancus,y00678,iNat490023.ogg,19,N/A,0.0
+Caracara plancus,y00678,XC936233.ogg,20,Leptotila verreauxi,0.4634
+Caracara plancus,y00678,XC364318.ogg,21,N/A,0.0
+Caracara plancus,y00678,XC943710.ogg,22,Caracara plancus,0.695
+Caracara plancus,y00678,XC737490.ogg,23,Caracara plancus,0.2176
+Caracara plancus,y00678,XC384267.ogg,24,Caracara plancus,0.2661
+Caracara plancus,y00678,XC165328.ogg,25,N/A,0.0
+Butorides striata,strher,XC728723.ogg,1,N/A,0.0
+Butorides striata,strher,XC117050.ogg,2,N/A,0.0
+Butorides striata,strher,XC435967.ogg,3,N/A,0.0
+Butorides striata,strher,XC278946.ogg,4,Butorides virescens,0.4738
+Butorides striata,strher,XC939543.ogg,5,Butorides striata,0.7693
+Butorides striata,strher,XC247434.ogg,6,Butorides striata,0.5614
+Butorides striata,strher,XC45686.ogg,7,Butorides striata,0.9427
+Butorides striata,strher,XC51339.ogg,8,Butorides striata,0.931
+Butorides striata,strher,XC352284.ogg,9,Butorides striata,0.9614
+Butorides striata,strher,XC959219.ogg,10,Butorides virescens,0.4765
+Butorides striata,strher,XC812232.ogg,11,N/A,0.0
+Butorides striata,strher,XC654366.ogg,12,Butorides striata,0.2037
+Butorides striata,strher,XC2439.ogg,13,Butorides virescens,0.3813
+Butorides striata,strher,XC45687.ogg,14,Butorides striata,0.9746
+Butorides striata,strher,XC961357.ogg,15,Butorides striata,0.9898
+Butorides striata,strher,XC635415.ogg,16,Butorides virescens,0.9182
+Butorides striata,strher,XC761499.ogg,17,N/A,0.0
+Butorides striata,strher,XC659999.ogg,18,Butorides virescens,0.8582
+Butorides striata,strher,XC838781.ogg,19,Butorides striata,0.2578
+Butorides striata,strher,XC276788.ogg,20,Butorides striata,0.8942
+Butorides striata,strher,XC905715.ogg,21,N/A,0.0
+Butorides striata,strher,XC904318.ogg,22,N/A,0.0
+Butorides striata,strher,XC901852.ogg,23,N/A,0.0
+Butorides striata,strher,XC307237.ogg,24,Butorides striata,0.8338
+Butorides striata,strher,XC937575.ogg,25,N/A,0.0
+Megascops choliba,trsowl,XC447987.ogg,1,Megascops choliba,0.9982
+Megascops choliba,trsowl,iNat326916.ogg,2,N/A,0.0
+Megascops choliba,trsowl,iNat1206641.ogg,3,Megascops choliba,0.8866
+Megascops choliba,trsowl,XC48740.ogg,4,Megascops choliba,0.9994
+Megascops choliba,trsowl,XC504712.ogg,5,Megascops choliba,0.9985
+Megascops choliba,trsowl,iNat857969.ogg,6,N/A,0.0
+Megascops choliba,trsowl,XC254117.ogg,7,Megascops choliba,0.9916
+Megascops choliba,trsowl,XC63823.ogg,8,Megascops choliba,0.969
+Megascops choliba,trsowl,XC597616.ogg,9,Megascops choliba,1.0
+Megascops choliba,trsowl,iNat398586.ogg,10,Megascops choliba,0.9966
+Megascops choliba,trsowl,iNat838946.ogg,11,Megascops choliba,0.9935
+Megascops choliba,trsowl,XC474632.ogg,12,Megascops choliba,0.2904
+Megascops choliba,trsowl,iNat1289667.ogg,13,Megascops choliba,0.9647
+Megascops choliba,trsowl,iNat333713.ogg,14,Megascops choliba,0.981
+Megascops choliba,trsowl,iNat35358.ogg,15,Megascops choliba,0.9973
+Megascops choliba,trsowl,XC813083.ogg,16,Megascops choliba,0.8787
+Megascops choliba,trsowl,XC135491.ogg,17,Megascops choliba,1.0
+Megascops choliba,trsowl,XC655356.ogg,18,Nyctibius griseus,0.3392
+Megascops choliba,trsowl,XC681111.ogg,19,Megascops choliba,0.9999
+Megascops choliba,trsowl,iNat567459.ogg,20,Megascops choliba,0.9998
+Megascops choliba,trsowl,iNat151180.ogg,21,Megascops choliba,0.984
+Megascops choliba,trsowl,iNat398585.ogg,22,Megascops choliba,0.5956
+Megascops choliba,trsowl,XC521790.ogg,23,Megascops choliba,0.9996
+Megascops choliba,trsowl,XC114879.ogg,24,Megascops choliba,0.9998
+Megascops choliba,trsowl,XC837427.ogg,25,Megascops choliba,0.9055
+Cathartes aura,turvul,iNat1107301.ogg,1,N/A,0.0
+Cathartes aura,turvul,XC115721.ogg,2,N/A,0.0
+Cathartes aura,turvul,iNat272287.ogg,3,N/A,0.0
+Cathartes aura,turvul,iNat292918.ogg,4,N/A,0.0
+Cathartes aura,turvul,XC904279.ogg,5,N/A,0.0
+Cathartes aura,turvul,XC780516.ogg,6,Podilymbus podiceps,0.4683
+Cathartes aura,turvul,XC748979.ogg,7,N/A,0.0
+Cathartes aura,turvul,XC520287.ogg,8,N/A,0.0
+Cathartes aura,turvul,XC520288.ogg,9,Cathartes aura,0.6353
+Cathartes aura,turvul,iNat21647.ogg,10,N/A,0.0
+Cathartes aura,turvul,iNat1275362.ogg,11,N/A,0.0
+Porphyrio martinica,purgal2,iNat690965.ogg,1,N/A,0.0
+Porphyrio martinica,purgal2,XC705557.ogg,2,N/A,0.0
+Porphyrio martinica,purgal2,iNat726577.ogg,3,Gallinula galeata,0.9928
+Porphyrio martinica,purgal2,XC51101.ogg,4,Porphyrio martinica,0.9673
+Porphyrio martinica,purgal2,XC516437.ogg,5,Porphyrio martinica,0.8239
+Porphyrio martinica,purgal2,XC443413.ogg,6,Porphyrio martinica,0.9535
+Porphyrio martinica,purgal2,XC166167.ogg,7,Gallinula galeata,0.7813
+Porphyrio martinica,purgal2,XC57618.ogg,8,Porphyrio martinica,0.2789
+Porphyrio martinica,purgal2,XC286687.ogg,9,Porphyrio martinica,0.9825
+Porphyrio martinica,purgal2,XC113925.ogg,10,Porphyrio martinica,0.9963
+Porphyrio martinica,purgal2,XC326531.ogg,11,Porphyrio martinica,0.8116
+Porphyrio martinica,purgal2,iNat1258220.ogg,12,Sicalis flaveola,0.3468
+Porphyrio martinica,purgal2,iNat397337.ogg,13,Porphyrio martinica,0.6672
+Porphyrio martinica,purgal2,XC623996.ogg,14,N/A,0.0
+Porphyrio martinica,purgal2,XC240303.ogg,15,Porphyrio martinica,0.3476
+Porphyrio martinica,purgal2,XC443414.ogg,16,Porphyrio martinica,0.8913
+Porphyrio martinica,purgal2,iNat198521.ogg,17,Porphyrio martinica,0.8511
+Porphyrio martinica,purgal2,XC255142.ogg,18,Porphyrio martinica,0.35
+Porphyrio martinica,purgal2,XC457186.ogg,19,Buteo platypterus,0.2356
+Porphyrio martinica,purgal2,XC623995.ogg,20,N/A,0.0
+Porphyrio martinica,purgal2,XC255140.ogg,21,Vanellus chilensis,0.6382
+Porphyrio martinica,purgal2,XC384710.ogg,22,Porphyrio martinica,0.3969
+Porphyrio martinica,purgal2,XC368530.ogg,23,Porphyrio martinica,0.9862
+Porphyrio martinica,purgal2,XC368527.ogg,24,Porphyrio martinica,0.9815
+Porphyrio martinica,purgal2,XC57620.ogg,25,Porphyrio martinica,0.6371
+Egretta thula,snoegr,iNat838771.ogg,1,N/A,0.0
+Egretta thula,snoegr,XC240176.ogg,2,Egretta thula,0.887
+Egretta thula,snoegr,iNat707096.ogg,3,N/A,0.0
+Egretta thula,snoegr,XC443383.ogg,4,Egretta thula,0.8485
+Egretta thula,snoegr,XC174467.ogg,5,N/A,0.0
+Egretta thula,snoegr,iNat69384.ogg,6,Nycticorax nycticorax,0.335
+Egretta thula,snoegr,XC45684.ogg,7,Bubulcus ibis,0.3015
+Egretta thula,snoegr,XC143585.ogg,8,Egretta thula,0.2974
+Egretta thula,snoegr,XC825721.ogg,9,Ardea alba,0.3018
+Egretta thula,snoegr,iNat1044098.ogg,10,Ardea alba,0.5372
+Egretta thula,snoegr,XC636492.ogg,11,Tachybaptus dominicus,0.9175
+Egretta thula,snoegr,XC481926.ogg,12,N/A,0.0
+Egretta thula,snoegr,iNat75295.ogg,13,Bubulcus ibis,0.2584
+Egretta thula,snoegr,XC777272.ogg,14,Egretta thula,0.9314
+Egretta thula,snoegr,XC494412.ogg,15,Ardea alba,0.8131
+Egretta thula,snoegr,XC501091.ogg,16,Egretta thula,0.4594
+Egretta thula,snoegr,XC946086.ogg,17,Egretta thula,0.6979
+Egretta thula,snoegr,iNat23976.ogg,18,N/A,0.0
+Egretta thula,snoegr,XC131022.ogg,19,Ardea alba,0.9671
+Egretta thula,snoegr,XC811614.ogg,20,Egretta thula,0.432
+Egretta thula,snoegr,XC577086.ogg,21,Egretta thula,0.4068
+Egretta thula,snoegr,XC705547.ogg,22,Sturnella magna,0.8828
+Egretta thula,snoegr,XC143586.ogg,23,Egretta thula,0.5977
+Egretta thula,snoegr,XC452102.ogg,24,Egretta thula,0.3346
+Egretta thula,snoegr,iNat652741.ogg,25,N/A,0.0
+Tringa solitaria,solsan,XC123934.ogg,1,N/A,0.0
+Tringa solitaria,solsan,iNat144453.ogg,2,Tringa solitaria,0.8103
+Tringa solitaria,solsan,XC598113.ogg,3,Tringa solitaria,0.9943
+Tringa solitaria,solsan,XC828232.ogg,4,Tringa solitaria,0.7574
+Tringa solitaria,solsan,iNat88540.ogg,5,Tringa solitaria,0.9962
+Tringa solitaria,solsan,XC674502.ogg,6,N/A,0.0
+Tringa solitaria,solsan,XC189283.ogg,7,Tringa solitaria,0.9932
+Tringa solitaria,solsan,XC175551.ogg,8,Tringa solitaria,0.9953
+Tringa solitaria,solsan,iNat499452.ogg,9,Tringa solitaria,0.6859
+Tringa solitaria,solsan,iNat172530.ogg,10,Tringa solitaria,0.9944
+Tringa solitaria,solsan,iNat1198157.ogg,11,Tringa solitaria,0.9887
+Tringa solitaria,solsan,XC602555.ogg,12,Tringa solitaria,0.9999
+Tringa solitaria,solsan,XC589665.ogg,13,Tringa solitaria,0.9955
+Tringa solitaria,solsan,iNat750493.ogg,14,Tringa solitaria,0.9976
+Tringa solitaria,solsan,XC504231.ogg,15,Tringa solitaria,0.9919
+Tringa solitaria,solsan,XC443437.ogg,16,Tringa solitaria,0.9051
+Tringa solitaria,solsan,XC674349.ogg,17,Tringa solitaria,0.8482
+Tringa solitaria,solsan,XC189594.ogg,18,Tringa solitaria,0.9999
+Tringa solitaria,solsan,iNat806031.ogg,19,Tringa solitaria,0.8757
+Tringa solitaria,solsan,iNat429614.ogg,20,Tringa solitaria,0.9987
+Tringa solitaria,solsan,iNat831209.ogg,21,Contopus sordidulus,0.9077
+Tringa solitaria,solsan,iNat793066.ogg,22,Tringa solitaria,0.8403
+Tringa solitaria,solsan,iNat1013225.ogg,23,Tringa solitaria,0.5557
+Tringa solitaria,solsan,XC189628.ogg,24,Tringa solitaria,0.8463
+Tringa solitaria,solsan,XC663728.ogg,25,Tringa solitaria,0.931
+Setophaga pitiayumi,tropar,XC573863.ogg,1,Setophaga pitiayumi,0.6831
+Setophaga pitiayumi,tropar,iNat771655.ogg,2,Pitangus sulphuratus,0.8483
+Setophaga pitiayumi,tropar,iNat1005228.ogg,3,Setophaga pitiayumi,0.9359
+Setophaga pitiayumi,tropar,XC235229.ogg,4,Setophaga pitiayumi,0.9918
+Setophaga pitiayumi,tropar,iNat851089.ogg,5,Setophaga pitiayumi,0.8323
+Setophaga pitiayumi,tropar,XC194130.ogg,6,Setophaga pitiayumi,0.9038
+Setophaga pitiayumi,tropar,XC738222.ogg,7,Setophaga pitiayumi,0.9415
+Setophaga pitiayumi,tropar,XC387081.ogg,8,N/A,0.0
+Setophaga pitiayumi,tropar,XC259444.ogg,9,Setophaga pitiayumi,0.7993
+Setophaga pitiayumi,tropar,iNat1002357.ogg,10,Setophaga pitiayumi,0.4791
+Setophaga pitiayumi,tropar,XC383029.ogg,11,Setophaga pitiayumi,0.8374
+Setophaga pitiayumi,tropar,XC163526.ogg,12,Setophaga pitiayumi,0.5836
+Setophaga pitiayumi,tropar,XC275581.ogg,13,Setophaga pitiayumi,0.9509
+Setophaga pitiayumi,tropar,XC746485.ogg,14,Setophaga pitiayumi,0.629
+Setophaga pitiayumi,tropar,XC698576.ogg,15,Setophaga pitiayumi,0.8785
+Setophaga pitiayumi,tropar,XC551568.ogg,16,Setophaga pitiayumi,0.8164
+Setophaga pitiayumi,tropar,XC726617.ogg,17,N/A,0.0
+Setophaga pitiayumi,tropar,iNat559544.ogg,18,Setophaga pitiayumi,0.8185
+Setophaga pitiayumi,tropar,iNat264555.ogg,19,Setophaga pitiayumi,0.5494
+Setophaga pitiayumi,tropar,iNat360736.ogg,20,N/A,0.0
+Setophaga pitiayumi,tropar,XC823097.ogg,21,Setophaga pitiayumi,0.9853
+Setophaga pitiayumi,tropar,XC812925.ogg,22,Setophaga pitiayumi,0.6847
+Setophaga pitiayumi,tropar,XC327635.ogg,23,Setophaga pitiayumi,0.7968
+Setophaga pitiayumi,tropar,XC1550.ogg,24,Setophaga pitiayumi,0.9366
+Setophaga pitiayumi,tropar,iNat405230.ogg,25,Setophaga pitiayumi,0.5241
+Mycteria americana,woosto,XC193137.ogg,1,Mycteria americana,0.9984
+Mycteria americana,woosto,XC131066.ogg,2,Mycteria americana,0.5288
+Mycteria americana,woosto,XC52057.ogg,3,N/A,0.0
+Mycteria americana,woosto,XC131065.ogg,4,N/A,0.0
+Mycteria americana,woosto,iNat446108.ogg,5,Mycteria americana,0.51
+Mycteria americana,woosto,XC197029.ogg,6,Mycteria americana,0.6489
+Mycteria americana,woosto,iNat859775.ogg,7,Nannopterum brasilianum,0.7696
+Mycteria americana,woosto,iNat446109.ogg,8,N/A,0.0
+Mycteria americana,woosto,XC412495.ogg,9,N/A,0.0
+Mycteria americana,woosto,iNat684005.ogg,10,Mycteria americana,0.8913
+Mycteria americana,woosto,XC196308.ogg,11,Mycteria americana,0.9947
+Mycteria americana,woosto,XC149638.ogg,12,Ardea alba,0.9739
+Mycteria americana,woosto,iNat684010.ogg,13,N/A,0.0
+Mycteria americana,woosto,XC789813.ogg,14,N/A,0.0
+Mycteria americana,woosto,XC197030.ogg,15,Mycteria americana,0.4179
+Mycteria americana,woosto,iNat238413.ogg,16,N/A,0.0
+Mycteria americana,woosto,iNat125203.ogg,17,Mycteria americana,0.9833
+Mycteria americana,woosto,XC193143.ogg,18,Mycteria americana,0.9992
+Mycteria americana,woosto,XC45147.ogg,19,N/A,0.0
+Mycteria americana,woosto,XC161837.ogg,20,N/A,0.0
+Mycteria americana,woosto,XC139206.ogg,21,Ardea alba,0.961
+Mycteria americana,woosto,iNat640627.ogg,22,Quiscalus lugubris,0.2128
+Mycteria americana,woosto,XC193139.ogg,23,Mycteria americana,0.999
+Mycteria americana,woosto,iNat683978.ogg,24,Mycteria americana,0.9625
+Mycteria americana,woosto,XC161839.ogg,25,N/A,0.0
+Leptotila verreauxi,whtdov,XC736574.ogg,1,Leptotila verreauxi,0.9611
+Leptotila verreauxi,whtdov,XC112747.ogg,2,Leptotila verreauxi,0.8344
+Leptotila verreauxi,whtdov,XC497528.ogg,3,Tityra semifasciata,0.9962
+Leptotila verreauxi,whtdov,iNat225934.ogg,4,Leptotila verreauxi,0.726
+Leptotila verreauxi,whtdov,XC210888.ogg,5,Leptotila verreauxi,0.2111
+Leptotila verreauxi,whtdov,XC85195.ogg,6,Synallaxis gujanensis,0.9335
+Leptotila verreauxi,whtdov,XC800313.ogg,7,Myiopagis caniceps,0.8199
+Leptotila verreauxi,whtdov,XC511078.ogg,8,Leptotila verreauxi,0.9572
+Leptotila verreauxi,whtdov,XC705702.ogg,9,Leptotila verreauxi,0.9458
+Leptotila verreauxi,whtdov,iNat1290116.ogg,10,Leptotila verreauxi,0.2576
+Leptotila verreauxi,whtdov,XC257622.ogg,11,Leptotila verreauxi,0.8109
+Leptotila verreauxi,whtdov,XC425534.ogg,12,Leptotila verreauxi,0.939
+Leptotila verreauxi,whtdov,XC418924.ogg,13,Leptotila rufaxilla,0.9034
+Leptotila verreauxi,whtdov,XC309816.ogg,14,Leptotila verreauxi,0.9823
+Leptotila verreauxi,whtdov,XC656784.ogg,15,Leptotila verreauxi,0.9891
+Leptotila verreauxi,whtdov,XC134166.ogg,16,Leptotila verreauxi,0.7216
+Leptotila verreauxi,whtdov,iNat1165660.ogg,17,N/A,0.0
+Leptotila verreauxi,whtdov,XC885379.ogg,18,Leptotila verreauxi,0.9361
+Leptotila verreauxi,whtdov,XC360483.ogg,19,Leptotila rufaxilla,0.7666
+Leptotila verreauxi,whtdov,XC264416.ogg,20,Leptotila verreauxi,0.815
+Leptotila verreauxi,whtdov,XC235856.ogg,21,Leptotila verreauxi,0.9474
+Leptotila verreauxi,whtdov,XC833756.ogg,22,Leptotila verreauxi,0.9927
+Leptotila verreauxi,whtdov,iNat190392.ogg,23,Leptotila verreauxi,0.8646
+Leptotila verreauxi,whtdov,iNat815755.ogg,24,N/A,0.0
+Leptotila verreauxi,whtdov,XC73767.ogg,25,Leptotila verreauxi,0.9179
