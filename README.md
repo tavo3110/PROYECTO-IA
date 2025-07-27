@@ -47,19 +47,20 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 ---
 
 ## Estructura del Repositorio
-├── ejecutable_proyecto.py            # Script principal que automatiza todo el pipeline
-├── cuaderno_interactivo.ipynb        # Notebook explicativo con análisis y resultados paso a paso
-├── resultados_proyecto/              # Carpeta con los resultados organizados por etapa y experimento
-│   ├── experimento_1/                # Resultados del experimento 1 (Numero de epocas y pasos necesarios para encontrar el mejor filtro.)
-│   ├── etapa_2_resultados/           # Resultados de la etapa 2 del pipeline
-│   ├── experimento_2/                # Comparacion de espectogramas y confianza para audios sin filtro y luego con el mejor filtro encontrado
-│   └── validacion_birdnet/           # Validacion de confianza de birdnet con audios etiquetados de el dataset Birdcleff
-├── requirements.txt                  # Requisitos y dependencias del entorno
-└── README.md                         # Documentación principal del proyecto
+- ejecutable_proyecto.py               # Script principal que automatiza todo el pipeline
+- cuaderno_interactivo.ipynb           # Notebook explicativo con análisis y resultados paso a paso
+- resultados_proyecto/                 # Carpeta con los resultados organizados por etapa y experimento
+  - experimento_1/                     # Resultados del experimento 1 (Numero de epocas y pasos necesarios para encontrar el mejor filtro.)
+  - etapa_2_resultados/                # Resultados de la etapa 2 del pipeline
+  - experimento_2/                     # Comparacion de espectogramas y confianza para audios sin filtro y luego con el mejor filtro encontrado
+  - validacion_birdnet/                # Validacion de confianza de birdnet con audios etiquetados de el dataset Birdcleff
+- requirements.txt                     # Requisitos y dependencias del entorno
+- README.md                            # Documentación principal del proyecto
 
 # Instalacion y requisitos
 
 ### Clonar el repositorio
+
 git clone https://github.com/tavo3110/PROYECTO-IA.git
 cd PROYECTO-IA
 
@@ -72,35 +73,45 @@ pip install -r requirements.txt
 
 ## Descargar BIRDNET ANALYZER
 
-### Pasos para descargar:
-DESCARGA E INSTALACIÓN DE BIRDNET ANALYZER
-1. **Descargar BirdNET Analyzer:**
-🔗 [BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer)
-:: Hacer clic en "Code" > "Download ZIP"
-:: Extraer el contenido en una carpeta conocida, por ejemplo: D:\BirdNET-Analyzer-main
+Para procesar audios con el modelo de detección de aves BirdNET, sigue los siguientes pasos para descargar e instalar BirdNET Analyzer:
 
-2. **Crear un entorno virtual con Python 3.11.13 (usando conda o el entorno que prefieras)**
-conda create -n birdnet python=3.11.13 -y
-conda activate birdnet
+### Pasos para descargar:
+
+1. **Descargar BirdNET Analyzer**  
+   🔗 [Repositorio oficial de BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer)  
+   - Haz clic en el botón **"Code"**  
+   - Luego selecciona **"Download ZIP"**  
+   - Extrae el contenido del archivo en una carpeta conocida, por ejemplo:  
+     `D:\BirdNET-Analyzer-main`
+
+2. **Crear un entorno virtual con Python 3.11.13**  
+   Puedes usar Conda u otro gestor de entornos. Con Conda:  
+   ```bash
+   conda create -n birdnet python=3.11.13 -y
+   conda activate birdnet
 
 3. **Ir a la carpeta donde se extrajo BirdNET Analyzer**
-cd /d "D:\BirdNET-Analyzer-main"
+
+  ```bash
+  cd /d "D:\BirdNET-Analyzer-main"
 
 4. **Instalar las dependencias necesarias**
-pip install -e .
+  ```bash
+  pip install -e .
 
 5. **Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
-:: Asegúrate de modificar las rutas según tu estructura
-python -m birdnet_analyzer.analyze "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA" ^
+ - Asegúrate de modificar las rutas según tu estructura
+    ```bash
+    python -m birdnet_analyzer.analyze "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA" ^
     --output "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA\resultados" ^
     --lat 10.45 --lon -73.25 --min_conf 0.6 --rtype csv
 
 ### NOTAS ADICIONALES
 
-:: - Puedes modificar la carpeta de entrada y salida a conveniencia.
-:: - Los parámetros --lat y --lon indican la ubicación geográfica (en este caso, Cesar - Colombia).
-:: - El valor --min_conf 0.6 define la confianza mínima para aceptar una detección.
-:: - El parámetro --rtype csv indica que los resultados se exportan en formato CSV.
+- Puedes modificar la carpeta de entrada y salida a conveniencia.
+- Los parámetros --lat y --lon indican la ubicación geográfica (en este caso, Cesar - Colombia).
+- El valor --min_conf 0.6 define la confianza mínima para aceptar una detección.
+- El parámetro --rtype csv indica que los resultados se exportan en formato CSV.
 
 ## Descargar el dataset de BirdCLEF 2025
 
@@ -134,7 +145,7 @@ Este proyecto se ejecuta de forma automática mediante el archivo `ejecutabl pro
 4. Entrenamiento y evaluación del agente de Aprendizaje por Refuerzo (RL)
 5. Comparacion entre confianza sin filtros y con filtros
 
-## 📂 Requisitos previos
+## Requisitos previos
 
 Antes de ejecutar el script, asegúrate de:
 
@@ -152,9 +163,9 @@ Antes de ejecutar el script, asegúrate de:
 
 ## Ejecutar el pipeline completo
 
-Desde la terminal, ejecuta:
-
-python ejecutable_proyecto.py
+- Desde la terminal, ejecuta:
+    ```bash
+    python ejecutable_proyecto.py
 
 ## Interacción con el Sistema
 
@@ -186,9 +197,44 @@ Los siguientes parámetros pueden modificarse directamente editando el archivo `
 
 Al finalizar la ejecución, el sistema creará los siguientes archivos y directorios:
 
- fragmentos_audio/                # Fragmentos generados del audio original
- temp_eval/                       # Carpeta temporal para procesamiento (se vacía automáticamente)
- temp_eval_result/                # Carpeta temporal para procesamiento (se vacía automáticamente)
- salida_birdnet/*.txt             # Resultados de BirdNET sin filtros (referencia)
- resultados_csv_birdnet/          # CSV con los resultados de BirdNET sobre audios filtrados
- comparacion_resultados.csv       # Comparación de puntuaciones de confianza entre fragmentos sin filtro y mejores filtrados por RL
+- fragmentos_audio/                # Fragmentos generados del audio original
+- temp_eval/                       # Carpeta temporal para procesamiento (se vacía automáticamente)
+- temp_eval_result/                # Carpeta temporal para procesamiento (se vacía automáticamente)
+- salida_birdnet/*.txt             # Resultados de BirdNET sin filtros (referencia)
+- resultados_csv_birdnet/          # CSV con los resultados de BirdNET sobre audios filtrados
+- comparacion_resultados.csv       # Comparación de puntuaciones de confianza entre fragmentos sin filtro y mejores filtrados por RL
+
+## Resultados del Proyecto
+
+Los resultados del proyecto se obtuvieron principalmente a partir del cuaderno interactivo (`cuaderno interactivo.ipynb`), el cual analiza y visualiza los datos generados por el pipeline. En este repositorio, se encuentran organizados en varias carpetas clave dentro del directorio `resultados proyecto/`, las cuales documentan el impacto del filtrado y la efectividad de BirdNET en distintos escenarios. A continuación se detallan:
+
+### `etapa_2_resultados/`
+Contiene los resultados principales del proyecto:
+
+- `comparacion_resultados.csv`: Comparación de mejora de los 50 audios procesados por el pipeline. Muestra las diferencias de confianza de BirdNET antes y después del filtrado, junto con los filtros óptimos seleccionados.
+- `comparacion_resultados.png`: Representación gráfica del archivo CSV anterior. Muestra, para cada audio, la mejora o desmejora en la confianza de detección tras el filtrado.
+
+### `experimento_1/`
+Permite analizar cómo afecta el número de épocas y pasos del algoritmo de aprendizaje por refuerzo (RL) en la confianza de detección de BirdNET:
+
+- Archivos `.png` con gráficas de evolución de la confianza a lo largo de múltiples configuraciones de entrenamiento.
+- Estas gráficas ayudan a identificar el número óptimo de épocas y pasos necesarios para una mejora significativa en los resultados.
+
+### `experimento_2/`
+Estudia visualmente el impacto de los filtros mediante espectrogramas:
+
+- Espectrogramas en formato `.png` de audios sin filtrar y con filtrado aplicado.
+- Permiten visualizar cómo los filtros modifican el contenido frecuencial del audio.
+- Archivos `.csv` con la confianza de BirdNET en los audios originales y filtrados, como respaldo cuantitativo a los resultados visuales.
+
+### `validacion_birdnet/`
+Evalúa la precisión y confiabilidad de BirdNET usando audios previamente etiquetados (del dataset BirdCLEF):
+
+- CSVs con resultados de predicciones de BirdNET en audios con etiquetas conocidas.
+- Gráficas que muestran la tasa de aciertos de BirdNET comparando la especie real y la detectada.
+- Esta validación fortalece la confianza en el uso de BirdNET como herramienta de análisis en el pipeline.
+
+---
+
+Estos resultados en conjunto permiten evaluar de forma visual, cuantitativa y comparativa el impacto del filtrado optimizado por aprendizaje por refuerzo, validando tanto el funcionamiento del pipeline como la confiabilidad de BirdNET.
+
