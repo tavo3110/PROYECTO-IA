@@ -5,6 +5,7 @@
 ## Tabla de Contenidos
 
 - [Descripción del proyecto](#descripción-del-proyecto)
+- [Pipeline del proyecto](#pipeline-del-proyecto)
 - [Estructura del Repositorio](#estructura-del-repositorio)
 - [Instalación y Requisitos](#instalación-y-requisitos)
 - [Uso del Proyecto](#uso-del-proyecto)
@@ -36,12 +37,54 @@ En resumen, este proyecto combina:
 
 con el propósito de demostrar cómo el **aprendizaje por refuerzo** puede mejorar significativamente la calidad de las grabaciones de campo para estudios de biodiversidad.
 
+## Pipeline del Proyecto
+
+Este proyecto sigue un flujo de procesamiento de audio y optimización mediante inteligencia artificial. A continuación se detalla el pipeline paso a paso:
+
+1. **Entrada del usuario:**
+   - El usuario introduce por terminal la **ruta de un archivo de audio** (formatos `.wav` o `.ogg`).
+   - También se solicitan tres parámetros opcionales:
+     - Duración de los fragmentos en segundos.
+     - Nivel mínimo de energía para detección.
+     - Tiempo mínimo de duración con energía alta para considerar un evento válido.
+
+2. **Segmentación:**
+   - El audio es dividido en **fragmentos de 6 segundos** (por defecto) o en la duración definida por el usuario.
+   - Si el audio ya tiene exactamente la duración indicada, se procesa directamente sin dividir.
+
+3. **Filtrado:**
+   - Se aplica un **filtro pasabanda** para eliminar frecuencias fuera del rango de interés.
+   - Posteriormente, se aplica un **filtro de Kalman** para suavizar la señal y mejorar la calidad del audio antes del análisis.
+
+4. **Análisis con BirdNET:**
+   - Cada fragmento se analiza utilizando el modelo preentrenado de **BirdNET Analyzer**.
+   - El sistema genera un archivo `.csv` con los resultados de detección:
+     - Nombre de la especie.
+     - Nivel de confianza.
+     - Tiempo de inicio y fin del fragmento.
+   - Si se encuentran especies con confianza superior al umbral, se considera que el fragmento contiene aves detectables.
+
+5. **Aprendizaje por Refuerzo (Reinforcement Learning - RL):**
+   - Se define una función de **recompensa** basada en el número de especies detectadas en cada fragmento.
+   - Se entrena un **agente de aprendizaje por refuerzo** que:
+     - Explora diferentes combinaciones de parámetros del filtro.
+     - Aprende a seleccionar aquellos que maximizan la detección de especies.
+   - Acciones del agente:
+     - Ajustar la frecuencia de corte del filtro por medio de Fc.
+     - Modificar los Q y R.
+   - El entrenamiento ocurre durante varios **episodios** con múltiples repeticiones.
+
+6. **Salida y Resultados:**
+   - Se generan y guardan los siguientes archivos:
+     - Audios segmentados y filtrados.
+     - Archivos `.csv` con las detecciones de BirdNET.
+     - Imágenes `.png` de la evolución de la recompensa del agente por episodio.
+     - Un archivo `.csv` adicional con el historial de parámetros óptimos elegidos por el agente en cada episodio.
+   - Los resultados pueden ser visualizados para evaluar el desempeño del sistema en la mejora de detección mediante RL.
 
 ---
 
-## Descripción General
-
-Este proyecto tiene como objetivo analizar grabaciones de audio ambientales utilizando BirdNET, procesar y segmentar los audios en base a energía, y aplicar un enfoque de aprendizaje por refuerzo para optimizar la selección de segmentos relevantes. Toda la lógica está organizada en un pipeline automatizado para facilitar su ejecución.
+Este pipeline permite pasar de un audio crudo a un sistema que **optimiza automáticamente** su análisis para maximizar la detección de especies de aves, aplicando técnicas de procesamiento de señal con aprendizaje reforzado.
 
 ---
 
@@ -50,7 +93,7 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 - cuaderno_interactivo.ipynb           # Notebook explicativo con análisis y resultados paso a paso
 - resultados_proyecto/                 # Carpeta con los resultados organizados por etapa y experimento
   - experimento_1/                     # Resultados del experimento 1 (Numero de epocas y pasos necesarios para encontrar el mejor filtro.)
-  - etapa_2_resultados/                # Resultados de la etapa 2 del pipeline
+  - etapa_2_resultados/                # Resultados de la etapa 2 del pipeline es decir mejora de confianza y comparacion de confianza
   - experimento_2/                     # Comparacion de espectogramas y confianza para audios sin filtro y luego con el mejor filtro encontrado
   - validacion_birdnet/                # Validacion de confianza de birdnet con audios etiquetados de el dataset Birdcleff
 - requirements.txt                     # Requisitos y dependencias del entorno
