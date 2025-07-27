@@ -62,15 +62,23 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 
 git clone https://github.com/tavo3110/PROYECTO-IA.git
 
- cd PROYECTO-IA
+```bash
+cd PROYECTO-IA
+```
 
 
 ### Crear un entorno virtual (opcional pero recomendado)
+
+```bash
 python -m venv env
 source env/bin/activate      # En Windows: env\Scripts\activate
+```
 
 ### Instalar dependencias
+
+```bash
 pip install -r requirements.txt
+```
 
 ## Descargar BIRDNET ANALYZER
 
@@ -87,20 +95,23 @@ Para procesar audios con el modelo de detección de aves BirdNET, sigue los sigu
 
 2. **Crear un entorno virtual con Python 3.11.13**  
    Puedes usar Conda u otro gestor de entornos. Con Conda:  
-   ```bash
-   conda create -n birdnet python=3.11.13 -y
-   conda activate birdnet
-   ```
+
+```bash
+conda create -n birdnet python=3.11.13 -y
+conda activate birdnet
+```
 
 3. **Ir a la carpeta donde se extrajo BirdNET Analyzer**
+
 ```bash
 cd /d "D:\BirdNET-Analyzer-main"
 ```
 
 4. **Instalar las dependencias necesarias**
-  ```bash
-  pip install -e .
-  ```
+
+```bash
+pip install -e .
+```
 
 5. **Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
 
@@ -170,9 +181,10 @@ Antes de ejecutar el script, asegúrate de:
 ## Ejecutar el pipeline completo
 
 - Desde la terminal, ejecuta:
-    ```bash
-    python ejecutable_proyecto.py
-    ```
+
+```bash
+python ejecutable_proyecto.py
+```
 
 ## Interacción con el Sistema
 
