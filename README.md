@@ -8,8 +8,7 @@
 - [Estructura del Repositorio](#estructura-del-repositorio)
 - [Instalación y Requisitos](#instalación-y-requisitos)
 - [Uso del Proyecto](#uso-del-proyecto)
-- [Explicación Detallada del Pipeline](#explicación-detallada-del-pipeline)
-- [Resultados](#resultados)
+- [Resultados del Proyecto](#Resultados-del-Proyecto)
 
 
 # Descripción del Proyecto
@@ -62,7 +61,9 @@ Este proyecto tiene como objetivo analizar grabaciones de audio ambientales util
 ### Clonar el repositorio
 
 git clone https://github.com/tavo3110/PROYECTO-IA.git
-cd PROYECTO-IA
+
+ cd PROYECTO-IA
+
 
 ### Crear un entorno virtual (opcional pero recomendado)
 python -m venv env
@@ -89,22 +90,27 @@ Para procesar audios con el modelo de detección de aves BirdNET, sigue los sigu
    ```bash
    conda create -n birdnet python=3.11.13 -y
    conda activate birdnet
+   ```
 
 3. **Ir a la carpeta donde se extrajo BirdNET Analyzer**
-
-  ```bash
-  cd /d "D:\BirdNET-Analyzer-main"
+```bash
+cd /d "D:\BirdNET-Analyzer-main"
+```
 
 4. **Instalar las dependencias necesarias**
   ```bash
   pip install -e .
+  ```
 
 5. **Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
- - Asegúrate de modificar las rutas según tu estructura
-    ```bash
-    python -m birdnet_analyzer.analyze "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA" ^
-    --output "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA\resultados" ^
-    --lat 10.45 --lon -73.25 --min_conf 0.6 --rtype csv
+
+Asegúrate de modificar las rutas según tu estructura de archivos:
+
+```bash
+python -m birdnet_analyzer.analyze "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA" ^
+--output "D:\Mi Escritorio\Proyecto de IA\Con kalman+IA\resultados" ^
+--lat 10.45 --lon -73.25 --min_conf 0.6 --rtype csv
+```
 
 ### NOTAS ADICIONALES
 
@@ -166,6 +172,7 @@ Antes de ejecutar el script, asegúrate de:
 - Desde la terminal, ejecuta:
     ```bash
     python ejecutable_proyecto.py
+    ```
 
 ## Interacción con el Sistema
 
@@ -204,7 +211,7 @@ Al finalizar la ejecución, el sistema creará los siguientes archivos y directo
 - resultados_csv_birdnet/          # CSV con los resultados de BirdNET sobre audios filtrados
 - comparacion_resultados.csv       # Comparación de puntuaciones de confianza entre fragmentos sin filtro y mejores filtrados por RL
 
-## Resultados del Proyecto
+# Resultados del Proyecto
 
 Los resultados del proyecto se obtuvieron principalmente a partir del cuaderno interactivo (`cuaderno interactivo.ipynb`), el cual analiza y visualiza los datos generados por el pipeline. En este repositorio, se encuentran organizados en varias carpetas clave dentro del directorio `resultados proyecto/`, las cuales documentan el impacto del filtrado y la efectividad de BirdNET en distintos escenarios. A continuación se detallan:
 
