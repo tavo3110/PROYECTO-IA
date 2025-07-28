@@ -105,21 +105,17 @@ Este pipeline permite pasar de un audio crudo a un sistema que **optimiza autom�
 
 git clone https://github.com/tavo3110/PROYECTO-IA.git
 
-```bash
-cd PROYECTO-IA
-```
-
-
 ### Crear un entorno virtual (opcional pero recomendado)
 
 ```bash
-python -m venv env
-source env/bin/activate      # En Windows: env\Scripts\activate
+conda create -n birdnet python=3.11.13 -y
+conda activate birdnet
 ```
 
 ### Instalar dependencias
 
 ```bash
+cd ruta\al\PROYECTO-IA
 pip install -r requirements.txt
 ```
 
@@ -136,27 +132,19 @@ Para procesar audios con el modelo de detección de aves BirdNET, sigue los sigu
    - Extrae el contenido del archivo en una carpeta conocida, por ejemplo:  
      `D:\BirdNET-Analyzer-main`
 
-2. **Crear un entorno virtual con Python 3.11.13**  
-   Puedes usar Conda u otro gestor de entornos. Con Conda:  
-
-```bash
-conda create -n birdnet python=3.11.13 -y
-conda activate birdnet
-```
-
-3. **Ir a la carpeta donde se extrajo BirdNET Analyzer**
+2. **Ir a la carpeta donde se extrajo BirdNET Analyzer**
 
 ```bash
 cd /d "D:\BirdNET-Analyzer-main"
 ```
 
-4. **Instalar las dependencias necesarias**
+3. **Instalar las dependencias necesarias**
 
 ```bash
 pip install -e .
 ```
 
-5. **Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
+4. **Ejecutar BirdNET Analyzer sobre tu carpeta de audios**
 
 Asegúrate de modificar las rutas según tu estructura de archivos:
 
